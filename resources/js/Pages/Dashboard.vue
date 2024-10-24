@@ -2,8 +2,6 @@
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import { Head } from '@inertiajs/vue3';
 
-// Tambahkan kode yang tidak valid di sini
-const brokenCode =
 </script>
 
 <template>
