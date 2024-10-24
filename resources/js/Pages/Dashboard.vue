@@ -8,7 +8,6 @@ import { Head } from '@inertiajs/vue3';
 
     <AuthenticatedLayout>
         <template #header>
-            <h2 class="font-semibold text-xl text-gray-800 leading-tight">Dashboard Laa</h2>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">Dashboard Baru</h2>
         </template>
 
@@ -20,7 +19,7 @@ import { Head } from '@inertiajs/vue3';
                         <div class="p-6">
                             <h3 class="font-bold text-lg mb-2">Selamat Datang, {{ $page.props.auth.user.name }}!</h3>
                             <p class="text-gray-700">You are logged in and ready to start.</p>
-                        </div>git
+                        </div>
                     </div>
                     <!-- Card 2 -->
                     <div class="bg-white overflow-hidden shadow-md rounded-lg">
