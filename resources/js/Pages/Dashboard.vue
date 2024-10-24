@@ -2,7 +2,6 @@
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import { Head } from '@inertiajs/vue3';
 
-const brokenCode =
 </script>
 
 <template>
@@ -20,7 +19,7 @@ const brokenCode =
                     <div class="bg-white overflow-hidden shadow-md rounded-lg">
                         <div class="p-6">
                             <h3 class="font-bold text-lg mb-2">Selamat Datang, {{ $page.props.auth.user.name }}!</h3>
-                            <p class="text-gray-700">Silahkan lakukan.</p>
+                            <p class="text-gray-700">Silahkan lakukan Y6AYAYAYA.</p>
                         </div>
                     </div>
                     <!-- Card 2 -->
