@@ -11,10 +11,25 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+
+    # Setup PHP dan install Composer dependencies
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.1' # Versi PHP yang sesuai
+        extensions: mbstring, exif, pcntl
+        ini-values: post_max_size=256M, upload_max_filesize=256M, max_execution_time=300
+        coverage: none
+
+    - name: Install Composer dependencies
+      run: composer install --prefer-dist --no-progress --no-suggest --no-interaction
+
+    # Setup Node.js dan install Node.js dependencies
     - name: Use Node.js 20
       uses: actions/setup-node@v4
       with:
         node-version: 20.x
         cache: 'npm'
+
     - run: npm i
     - run: npm run build --if-present
