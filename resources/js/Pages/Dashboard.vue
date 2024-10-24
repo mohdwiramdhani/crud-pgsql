@@ -17,7 +17,7 @@ import { Head } from '@inertiajs/vue3';
                     <!-- Card 1 -->
                     <div class="bg-white overflow-hidden shadow-md rounded-lg">
                         <div class="p-6">
-                            <h3 class="font-bold text-lg mb-2">Welcome Back!</h3>
+                            <h3 class="font-bold text-lg mb-2">Selamat Datang, {{ $page.props.auth.user.name }}!</h3>
                             <p class="text-gray-700">You are logged in and ready to start.</p>
                         </div>
                     </div>
